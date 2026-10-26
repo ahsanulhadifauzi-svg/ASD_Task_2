@@ -5,7 +5,7 @@ void createList(List &L) {
     * FS : set first(L) with Null
     */
     //-------------your code here-------------
-    cout<<"your code here"<<endl;
+    L.first = nullptr;
 
 
     //----------------------------------------
@@ -16,11 +16,11 @@ address allocate(infotype x) {
     * FS : return new list element with info = x and next element is Null
     */
 
-    address P = NULL;
+    address p = nullptr;
     //-------------your code here-------------
-    cout<<"your code here"<<endl;
-
-
+    address p = new elmlist;
+    p->info = x;
+    p->next = nullptr;
     //----------------------------------------
     return P;
 }
@@ -31,7 +31,8 @@ void deallocate(address &P) {
     */
     //-------------your code here-------------
     cout<<"your code here"<<endl;
-
+    delete P;
+    P = nullptr;
 
     //----------------------------------------
 }
@@ -42,10 +43,12 @@ void insertFirst(List &L, address P) {
     * FS : element pointed by P became the first element in List L
     */
     //-------------your code here-------------
-    cout<<"your code here"<<endl;
-
-
-
+    if (l.first == nullptr){
+        l.first = p;
+    } else {
+        p->next = l.first;
+        l.first = p;
+    } 
     //----------------------------------------
 }
 
