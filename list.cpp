@@ -91,7 +91,6 @@ address findElm(List L, infotype x) {
     return nullptr;
 
     //----------------------------------------
-    return q;
 }
 
 void deleteFirst(List &L, address &P) {
