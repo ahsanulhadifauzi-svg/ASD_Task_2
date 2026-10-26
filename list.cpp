@@ -78,7 +78,7 @@ address findElm(List L, infotype x) {
            return Null if such ID is not found
     */
 
-    address P;
+
     //-------------your code here-------------
     address q;
     q=l.first;
@@ -91,7 +91,6 @@ address findElm(List L, infotype x) {
     return nullptr;
 
     //----------------------------------------
-    return P;
 }
 
 void deleteFirst(List &L, address &P) {
